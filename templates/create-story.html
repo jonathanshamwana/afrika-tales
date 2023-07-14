@@ -1,0 +1,71 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %} Afrika Tales {% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link href="static/styles/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+{% include 'header.html' %}
+
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="sample-heading pb-5">Create Your Story</h1>
+        <p class="hero-text">This is the beta version of Afrika Tales. Soon you'll be able to generate stories right on this page!</p>
+        <p class="hero-text">But for now, you can make stories for $0.02 a pop by clicking on "C'est Parti"</p>
+        <p class="hero-text">Don't let the code frighten you... Just follow the simple instructions in the "READ-ME" file.</p>
+        <p class="hero-text pb-4"><b>We're excited to see your stories!</b></p>
+        <a type="button" href="" class="btn btn-lg" style="background-color: #5C1D22; color: white">C'est Parti</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote-section" style="background-color: #eee;">
+
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col col-lg-9 col-xl-7">
+            <div class="card" style="border-radius: 15px; width: 800px; height: 300px">
+              <div class="card-body p-5">
+
+                <div class="text-center mb-4 pb-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+                    alt="Bulb" width="100">
+                </div>
+
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote">
+                    <p class="pb-3">
+                      <i class="fas fa-quote-left fa-xs text-primary"></i>
+                      <span class="quote-text font-italic" style="font-size: 16px;">"If you don't like my story, write your own."</span>
+                      <i class="fas fa-quote-right fa-xs text-primary"></i>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0" style="font-size: 14px;">
+                    Chinua Achebe
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+{% endblock %}
+
+{% block script %}
+    {{ super() }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+{% endblock %}

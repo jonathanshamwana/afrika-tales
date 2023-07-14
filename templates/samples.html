@@ -1,0 +1,80 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %} Afrika Tales {% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link href="static/styles/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+{% include 'header.html' %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="sample-heading pb-5">Sample Stories</h1>
+        <p class="hero-text">These stories were produced by Afrika Tales! All the program asked for was: </p>
+        <ul style="list-style-type: none;">
+            <li class="hero-text">The name of my child.</li>
+            <li class="hero-text">Their age and favorite activity.</li>
+            <li class="hero-text">Their home-town.</li>
+        </ul>
+        <p class="hero-text">It generated the photo and story using AI, and formatted it into a pdf. <span><b>Voila!</b></span></p>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="samples-album" class="py-5">
+    <div class="container py-2">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card h-100" style="width: 350px;">
+                    <img src="static/images/gondwe-cropped.png" class="card-img-top" alt="Oil painting" style="height: 350px">
+                    <div class="card-body">
+                      <h5 class="card-title py-3">Gondwe's Story</h5>
+                      <a href="static/pdfs/gondwe.pdf" class="btn btn-lg" style="background-color: #5C1D22; color: white">Read Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100" style="width: 350px;">
+                    <img src="static/images/ntumba-cropped.png" class="card-img-top" alt="Oil painting" style="height: 350px">
+                    <div class="card-body">
+                      <h5 class="card-title py-3">Ntumba's Story</h5>
+                      <a href="static/pdfs/ntumba.pdf" class="btn btn-lg" style="background-color: #5C1D22; color: white">Read Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100" style="width: 350px;">
+                    <img src="static/images/shibunga-cropped.png" class="card-img-top" alt="Oil painting" style="height: 350px">
+                    <div class="card-body">
+                      <h5 class="card-title py-3">Shibunga's Story</h5>
+                      <a href="static/pdfs/shibunga.pdf" class="btn btn-lg" style="background-color: #5C1D22; color: white">Read Story</a>
+                </div>
+            </div>
+
+        </div>
+
+  </section>
+
+
+
+
+{% endblock %}
+
+{% block script %}
+    {{ super() }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+{% endblock %}

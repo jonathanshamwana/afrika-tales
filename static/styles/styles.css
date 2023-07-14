@@ -1,0 +1,30 @@
+.hero-heading {
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'Indie Flower', cursive;
+    color: #5C1D22
+}
+
+.sample-heading {
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Indie Flower', cursive
+}
+
+.hero-subheading {
+    font-weight: bold;
+    font-size: 25px
+}
+
+.hero-text {
+    font-size: 16px
+}
+
+.nav a {
+    font-size: 14px;
+    color: black
+}
+
+.card-title {
+    font-size: 14px
+}
